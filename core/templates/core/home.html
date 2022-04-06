@@ -1,0 +1,28 @@
+{% extends 'core/base.html' %} {% load static %} {% block content %}
+<div class="my-5  mx-5">
+  <div class="text-center">
+    <img src="{% static 'core/images/rajendra.png' %}" alt="ProfilePic" class="img-thumbnail" width="250px"
+      height="150px" />
+  </div>
+  <div class="mt-5 text-white text-justify">
+    <h1 class="font-weight-blod">Rajendra Pun</h1>
+  </div>
+  <div style="color: white; line-height: 2rem;">
+    <p style="text-indent: 100px">
+      I am Front End Developer with 1+ years of professional experience in developing/designing web application.
+      I am proficient in Front End Development and have great experience in developing web application from designing,
+      developing to deployment.
+    </p>
+    For the design and moqups, i generally use Figma. I have been using Figma for a long time and have created design
+    for
+    several web applications using it.
+    <p>I have developed this project using <strong class="bg-success p-2">Python/Django</strong></p>
+
+  </div>
+  <div class="text-center">
+    <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+    <a href="{% url 'contact' %}" class="btn btn-outline-info my-3 mr-5">Contact</a>
+  </div>
+</div>
+</div>
+{% endblock content %}
